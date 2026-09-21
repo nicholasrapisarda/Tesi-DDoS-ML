@@ -1,5 +1,3 @@
-# Tesi-DDoS-ML
-
 # Rilevamento di Attacchi DDoS mediante Tecniche di Machine Learning
 
 Questo repository contiene il codice sorgente sviluppato per la tesi di Laurea in Ingegneria Informatica presso l'Università degli Studi di Enna "Kore".
@@ -21,9 +19,19 @@ I notebook sono progettati per essere eseguiti in un ambiente di rete simulato (
 2. `generatore_traffico.ipynb`: Genera traffico legittimo (HTTP) da parte dei client simulati.
 3. `attacco.ipynb`: Genera il traffico di attacco DDoS simulato.
 4. `sniffer.ipynb`: Cattura tutto il traffico sulla rete e genera il dataset integrale (`dataset_tesi_integrale.csv`).
-5. `ricevitore.ipynb` : Simula il server web vittima in ascolto sulla porta 80, registrando le connessioni in arrivo.
+5. `ricevitore.ipynb`: Simula il server web vittima in ascolto sulla porta 80, registrando le connessioni in arrivo.
 6. `etichettatura.ipynb`: Confronta il traffico catturato con i log degli attacchi per etichettare il dataset (`dataset_tesi_etichettato.csv`).
 7. `Progetto_MLP_DT_RF.ipynb`: Esegue il preprocessing, l'addestramento e la valutazione dei modelli di Machine Learning.
+
+## Dataset
+
+Il repository include i dataset grezzi necessari per riprodurre l'intera pipeline sperimentale:
+- `dataset_tesi_integrale.csv`: Dataset grezzo contenente tutto il traffico di rete catturato dallo sniffer.
+- `dataset_attacco.csv`: Dataset contenente i log dei pacchetti malevoli inviati durante la fase di attacco.
+
+Eseguendo i notebook nell'ordine indicato, verranno generati automaticamente i dataset intermedi e finali:
+- `dataset_tesi_etichettato.csv` (generato da `etichettatura.ipynb`)
+- `dataset_processato.csv`, `datasetTraining.csv`, `datasetTest.csv` (generati da `Progetto_MLP_DT_RF.ipynb`)
 
 ## Requisiti
 
@@ -32,3 +40,7 @@ Per eseguire i notebook sono necessarie le seguenti librerie Python:
 - `pandas`
 - `scikit-learn`
 - `matplotlib`
+
+## Licenza
+
+Questo progetto è sviluppato esclusivamente a scopo accademico per la tesi di Laurea. Tutti i diritti sono riservati all'autore.
