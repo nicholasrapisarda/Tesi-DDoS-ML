@@ -21,11 +21,11 @@ I primi 5 notebook devono essere eseguiti all'interno dell'ambiente di rete simu
 
 Devono essere eseguiti nel seguente ordine logico:
 
-1. `firewall.ipynb`: Configura le regole iptables per il filtraggio del traffico sulla porta 80.
-2. `generatore_traffico.ipynb`: Genera traffico legittimo (HTTP) da parte dei client simulati.
-3. `attacco.ipynb`: Genera il traffico di attacco DDoS simulato.
-4. `sniffer.ipynb`: Cattura tutto il traffico sulla rete e genera il dataset integrale (`dataset_tesi_integrale.csv`).
-5. `ricevitore.ipynb`: Simula il server web vittima in ascolto sulla porta 80, registrando le connessioni in arrivo.
+1. `ricevitore.ipynb`: Simula il server web vittima in ascolto sulla porta 80, registrando le connessioni in arrivo.
+2. `sniffer.ipynb`: Cattura tutto il traffico sulla rete e genera il dataset integrale (`dataset_tesi_integrale.csv`).
+3. `firewall.ipynb`: Configura le regole iptables per il filtraggio del traffico sulla porta 80.
+4. `generatore_traffico.ipynb`: Genera traffico legittimo (HTTP) da parte dei client simulati.
+5. `attacco.ipynb`: Genera il traffico di attacco DDoS simulato.
 
 ### Fase 2 — Elaborazione dei dati e Machine Learning (Ambiente locale)
 
