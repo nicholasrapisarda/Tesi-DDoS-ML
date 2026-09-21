@@ -23,6 +23,7 @@ I notebook sono progettati per essere eseguiti in un ambiente di rete simulato (
 4. `sniffer.ipynb`: Cattura tutto il traffico sulla rete e genera il dataset integrale (`dataset_tesi_integrale.csv`).
 5. `etichettatura.ipynb`: Confronta il traffico catturato con i log degli attacchi per etichettare il dataset (`dataset_tesi_etichettato.csv`).
 6. `Progetto_MLP_DT_RF.ipynb`: Esegue il preprocessing, l'addestramento e la valutazione dei modelli di Machine Learning.
+7. `ricevitore.ipynb` : Simula il server web vittima in ascolto sulla porta 80, registrando le connessioni in arrivo.
 
 ## Requisiti
 
