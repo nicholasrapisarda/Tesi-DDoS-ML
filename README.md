@@ -46,7 +46,7 @@ Eseguendo i notebook nell'ordine indicato, verranno generati automaticamente i d
 - `dataset_tesi_etichettato.csv` (generato da `etichettatura.ipynb`)
 - `dataset_processato.csv`, `datasetTraining.csv`, `datasetTest.csv` (generati da `Progetto_MLP_DT_RF.ipynb`)
 
-> **Nota per chi vuole testare solo i modelli di Machine Learning:** poiché i dataset grezzi (`dataset_tesi_integrale.csv` e `dataset_attacco.csv`) sono già inclusi nel repository, è possibile **saltare completamente la Fase 1** e riprodurre l'intera pipeline di elaborazione eseguendo in locale soltanto i notebook `etichettatura.ipynb` e `Progetto_MLP_DT_RF.ipynb`.
+**Nota per chi vuole testare solo i modelli di Machine Learning:** poiché i dataset grezzi (`dataset_tesi_integrale.csv` e `dataset_attacco.csv`) sono già inclusi nel repository, è possibile **saltare completamente la Fase 1** e riprodurre l'intera pipeline di elaborazione eseguendo in locale soltanto i notebook `etichettatura.ipynb` e `Progetto_MLP_DT_RF.ipynb`.
 
 ## Requisiti
 
